@@ -1,0 +1,113 @@
+<!-- <div class="ui-g-12 pm-header-dashbord">
+    <nav>
+        <div class="ui-g-2">
+            <img class="pm-header-logo-img" src="../../../assets/Jollibee_logo.png">
+        </div>
+        <div class="pm-buttons-div-foruser">
+            <div class="nav-item pm-button" [ngClass]="selectedButtonId==1 ? 'pm-selected-buttom' :'' ">
+                    <button class="pm-secondary-button-on-hover" pButton type="button" (click)="userManagment($event)" icon="fa fa-user"
+                        label="UserManagment"></button>
+                </div>
+        </div>
+    </nav>
+</div> -->
+
+<div  class="pm-header-div">
+        <nav class="navbar navbar-expand-md navbar-dark pm-nav-bar-on-hover">
+          <div class="navbar-brand pm-header-logo-div-on-hover">
+            <img class="pm-header-logo-img" src="../../../assets/Jollibee_logo.png">
+          </div>
+      
+          <!-- <div class="collapse navbar-collapse"> -->
+          <div class="pm-buttons-div">
+            <div >
+              <div class="nav-item pm-button" [ngClass]="selectedButtonId==1 ? 'pm-selected-buttom' :'' ">
+                <button class="pm-secondary-button-on-hover" pButton type="button"  icon="fa fa-tachometer" label="dashboard"></button>
+              </div>
+              <div class="nav-item pm-button" [ngClass]="selectedButtonId==2 ? 'pm-selected-buttom' :'' ">
+                <button class="pm-secondary-button-on-hover" pButton type="button"  icon="fa fa-search" label="UserManagment"></button>
+              </div>
+              <!-- <div  class="nav-item pm-button" [ngClass]="selectedButtonId==3 ? 'pm-selected-buttom' :'' ">
+      
+                <button class="pm-secondary-button-on-hover" pButton type="button" (click)="getSearchData(3)" icon="fa fa-cogs" label="generation"></button>
+      
+              </div>
+              <div class="nav-item pm-button" [ngClass]="selectedButtonId==4 ? 'pm-selected-buttom' :'' ">
+      
+                <button class="pm-secondary-button-on-hover" pButton type="button" (click)="getSearchData(4)" icon="fa fa-pie-chart" label="reporting"></button>
+      
+              </div>
+              <div class="nav-item pm-button" [ngClass]="selectedButtonId==5 ? 'pm-selected-buttom' :'' ">
+      
+                <button class="pm-secondary-button-on-hover" pButton type="button" (click)="getSearchData(5)" icon="fa fa-comment-o" label="feedback"></button>
+      
+              </div>
+              <div  class="nav-item pm-button" [ngClass]="selectedButtonId==6 ? 'pm-selected-buttom' :'' ">
+                <button class="pm-secondary-button-on-hover" pButton type="button" (click)="getSearchData(6)" icon="fa fa-clipboard" label="audit"></button>
+              </div> -->
+            </div>
+          </div>
+          <div class="pm-bell-icon-div">
+            <!-- <span class="dropdown-toggle" icon="fa fa-bell-o fa-2x" id="navbarDropdown" role="button" (click)="alert.toggle($event)" *ngIf="!(selectedUserRole.userDescription.value==='Market')">
+                 
+                </span> -->
+            <!-- <button pButton type="button" icon="fa fa-bell-o fa-2x" (click)="alert.toggle($event)" [ngClass]="isCountForBell ? 'pm-bell-icon-big1' : 'pm-bell-icon-big'">
+              <span *ngIf="isCountForBell" ng-show="alertNotificationCountFlag" class="badge">{{alertNotificationCount}}</span>
+            </button> -->
+      
+            <!-- <button *ngIf="isCountForBell" pButton type="button" icon="fa fa-bell-o fa-2x" (click)="alert.toggle($event)" class="pm-bell-icon-big">
+              <span ng-show="alertNotificationCountFlag" class="badge">{{alertNotificationCount}}</span>
+            </button> -->
+            <!-- <button pButton type="button" class="dropdown-toggle" label=" {{selectedUserRole.userId}} ({{selectedUserRole.userDescription.label}})" id="navbarDropdown" (click)="setting.toggle($event)" *ngIf="!(selectedUserRole.userDescription.value==='Market')"></button> -->
+            <span class="dropdown-toggle" id="navbarDropdown" role="button" (click)="setting.toggle($event)">
+             nitin
+            </span>
+            <span class="dropdown-toggle" id="navbarDropdown" role="button" (click)="setting.toggle($event)">
+              Suryawanshi
+            </span>
+          </div>
+          <!-- </div> -->
+        </nav>
+        <p-overlayPanel #setting styleClass="pm-setting-overlay">
+          <div class="pm-overlay-button">
+            <button pButton type="button" class="pm-setting-button"  icon="fa fa-globe" label="languageSettings"></button>
+          </div>
+          <div class="pm-overlay-button">
+            <button pButton type="button" class="pm-setting-button"  icon="fa fa-sign-out" label="logout"></button>
+          </div>
+          <div class="pm-version">appVersion</div>
+        </p-overlayPanel>
+      
+        <p-overlayPanel #language styleClass="pm-language-overlay" [appendTo]="setting">
+          <div class="pm-overlay-button">
+            <!--    <img class="pm-header-img" src="assets/de.svg"> -->
+            <button pButton type="button" class="pm-language-button" icon="rpm-english-icon" label="langEnglish"></button>
+          </div>
+          <div class="pm-overlay-button">
+            <!--   <img class="pm-header-img" src="./assets/in.svg"> -->
+            <button pButton type="button" class="pm-language-button"  icon="rpm-germany-icon" label="langGerman"></button>
+          </div>
+        </p-overlayPanel>
+        <!-- <p-overlayPanel #alert styleClass="pm-alert-overlay">
+          <div class="pm-notification">
+            <div class="ui-g pm-alert-notification">
+              <span class="ui-g">notification</span>
+            </div>
+            <div class="pm-alert-notification-main-text">
+              <div class="pm-notification-messeges" *ngFor="let notificationMessage of alertNotificationData;">
+                <div class="ui-g notification-messeges">
+                  <div class="ui-g-8 pm-notification-messeges-tittle">tittle</div>
+                  <div class="ui-g-4 notification-date">date</div>
+                </div>
+                <div class="pm-notification-messege">message</div>
+              </div>
+            </div>
+            <div class="ui-g pm-all-notification-redirect">
+              <div class="ui-g-2"></div>
+              <div class="ui-g-8 pm-all-notification-text" (click)="getAlertNotification($event , alert)">{{langSettingValues.seeAllNotification}}</div>
+              <div class="ui-g-2"></div>
+            </div>
+          </div>
+        </p-overlayPanel> -->
+      
+      </div>

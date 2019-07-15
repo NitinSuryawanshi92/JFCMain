@@ -1,0 +1,87 @@
+ <!-- <header *ngIf="!showLogInPage"></header>
+<div *ngIf="showLogInPage">
+    <div [ngClass]="display ? 'pm-log-in-div' : ''">
+        <div class="wrapper">
+            <form class="form-signin">
+                <div class="ui-g-12">
+                    <h2 class="form-signin-heading">Please login</h2>
+                </div>
+                <div class="ui-g-6">
+                   <ui-message></ui-message> 
+                </div>
+                <div class="ui-g-12">
+                    <input type="text" class="form-control" [value]="userName" (input)="userName = $event.target.value"  name="username" placeholder="UserName" required="" autofocus=""
+                    />
+                </div>
+                <div class="ui-g-12">
+                    <input type="password" class="form-control" [value]="password" (input)="password = $event.target.value" name="password" placeholder="Password" required="" />
+                </div>
+                <div class="ui-g-12">
+                    <button pButton type="button" class="pm-log-in-button" label="Log In" (click)="userLogin()"></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div> 
+<router-outlet *ngIf="!showLogInPage"></router-outlet> -->
+
+
+
+<header *ngIf="!showLogInPage"></header>
+<div *ngIf="showLogInPage" class="container h-100"  >
+    <div class="d-flex justify-content-center h-100">
+        <div class="user_card">
+            <div class="d-flex justify-content-center">
+                <div class="brand_logo_container">
+                    <img src="../assets/Jollibee_logo.png" class="brand_logo" alt="Logo">
+                </div>
+                
+            </div>
+            
+            <div class="d-flex justify-content-center form_container">
+                <form>
+                    <div class="input-group mb-3">
+                        <!-- <div class="input-group-append">
+                            <span class="input-group-text"><i class="fa fa-user"></i></span>
+                        </div> -->
+                        <input type="text" name="" class="form-control input_user" [value]="userName" (input)="userName = $event.target.value"  name="username" placeholder="UserName" required="" autofocus=""/>
+                        <!-- <input type="text" name="" class="form-control input_user" value="" placeholder="username"> -->
+                    </div>
+                    <div class="input-group mb-2">
+                        <!-- <div class="input-group-append">
+                            <span class="input-group-text"><i class="fa fa-key"></i></span>
+                        </div> -->
+                        <input type="password" name="" class="form-control input_pass"  [value]="password" (input)="password = $event.target.value" name="password" placeholder="Password" required="" />
+                        <!-- <input type="password" name="" class="form-control input_pass" value="" placeholder="password"> -->
+                    </div>
+                    <div>
+                            <ui-message></ui-message> 
+                         </div>
+                    <!-- <div class="form-group">
+                            
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customControlInline">
+                            <label class="custom-control-label" for="customControlInline">Remember me</label>
+                        </div>
+                    </div> -->
+                </form>
+            </div>
+            <div class="d-flex justify-content-center mt-3 login_container">
+                <button type="button" class="btn login_btn" label="Login" (click)="userLogin()">Login</button>
+                <!-- <button type="button" name="button" class="btn login_btn">Login</button> -->
+            </div>
+            <div class="mt-4">
+                <div class="d-flex justify-content-center links">
+                    Don't have an account? 
+                </div>
+                <!-- <a href="#" class="ml-2">Sign Up</a> -->
+                <div class="d-flex justify-content-center links">
+                    <a href="#">Forgot your password?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<router-outlet *ngIf="!showLogInPage"></router-outlet>
+
+

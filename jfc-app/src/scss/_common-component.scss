@@ -1,0 +1,82 @@
+.ui-table table {
+
+    th { 
+        font-weight: lighter;
+    }
+
+}
+.ui-accordion .ui-accordion-header {
+    background-color: #C8C8C8 !important;
+    // height: 6.1em;
+}
+// ui-accordion .ui-accordion-header.ui-state-active  {
+
+// }
+// .ui-accordion-toggle-icon {
+//     font-size: 30px;
+//     padding-top: 1.4%;
+//     display:none;
+// }
+.ui-accordion .ui-accordion-header:hover {
+    background-color: #C8C8C8 !important;
+}
+.ui-accordion-content {
+    border: 1px solid #C8C8C8;
+}
+.ui-widget {
+  font-size: 0.97em;
+}
+.ui-button-text {
+    color: white;
+    overflow:hidden;
+}
+.ui-overlaypanel-content {
+    padding: 0;
+} 
+.ui-button {
+    font-size: initial;
+    background-color: gray;
+    border-radius: inherit;
+    padding-bottom: 0.1em;
+    padding-top: 0.1em;
+    padding-left: 0.4em;
+    padding-right: 0.1em;
+}
+.iw-block-ui {
+    align-items: center;
+    justify-content: center;
+    position: fixed !important;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    opacity: 0.4;
+    .iw-block-ui-content {
+      height: 40px;
+      width: 40px;
+      position: absolute;
+      left: 50%;
+      top: 45%;
+      background: url("./assets/icon-spinner-loading.png");
+      animation: iw-block-ui-spinner 0.6s steps(12) infinite;
+    }
+  
+    @keyframes iw-block-ui-spinner {
+      from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: 0 480px;
+      }
+    }
+  }
+  .ui-widget-header{
+    background: white !important;
+}
+.ui-dialog-titlebar {
+    background: white !important; 
+    padding: 0px !important;
+
+}
+div {
+    font-family: CorpoS !important;
+}

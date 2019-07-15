@@ -1,0 +1,28 @@
+
+<!-- <div class="pm-login-page ui-g">
+  
+    <span class="pm-loginpageheader">Login Page</span>
+    <div class="pm-username ui-g-12">
+      <span class="pm-username-lable ui-g-6">UserName</span>
+      <span class="pm-username-input-div ui-g-6"><input class="pm-username-input" [value]="userName" (input)="userName = $event.target.value" type="text" placeholder="UserName"></span>
+    </div>
+    <div class="pm-password ui-g-12">
+      <span class="pm-password-lable ui-g-6">Password</span>
+      <span class="pm-password-input-div ui-g-6"><input class="pm-password-input" [value]="password" (input)="password = $event.target.value"  type="password" placeholder="Password"></span>
+    </div>
+    <div class="pm-loginpage-button-div ui-g-12">
+      <span class="pm-login-button-div"><button class="pm-login-button" (click)="userLogin()">Login</button></span>
+      <span class="pm-cancel-button-div"><button class="pm-cancel-button">Cancel</button></span>
+    </div>
+  
+</div> -->
+
+<!-- <div class="ui-g-12 ui-md-4">
+  <h3> Select Time</h3>
+  <p-calendar [(ngModel)]="dateForCronJob" (onSelect)="selectTimeForCronJob($event)" [showTime]="true"></p-calendar>
+</div> -->
+
+<div class="ui-g-12 ui-md-4">
+  <h3>Time Only </h3>
+  <p-calendar [(ngModel)]="dateForCronJob" (onSelect)="selectTimeForCronJob($event)" [timeOnly]="true"></p-calendar>
+</div>

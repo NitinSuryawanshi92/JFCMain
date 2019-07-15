@@ -1,0 +1,105 @@
+.pm-login-page{
+    padding-left: 39em;
+    padding-top: 17em;
+   
+    .pm-login-page-border{
+        border: 0.1em solid black;
+    }
+    .pm-loginpageheader{
+        color: black;
+        font-size: 2em;
+    
+    }
+}
+.pm-username{
+    padding-bottom: 1em;
+    padding-top: 1em;
+    .pm-username-lable{
+        font-size: 1.5em;
+    }
+    .pm-username-input-div{
+        padding-left: 4em;
+    }
+    .pm-username-input{
+        height: 2em;
+    }
+}
+.pm-password{
+    padding-bottom: 1em;
+    .pm-password-lable{
+        font-size: 1.5em;
+    }
+    .pm-password-input-div{
+        padding-left: 4.5em;
+    }
+    .pm-password-input{
+        height: 2em;
+    }
+}
+.pm-loginpage-button-div{
+    .pm-login-button-div{
+        .pm-login-button{
+            height: 2em;
+            width: 7em;
+        }
+
+    }
+    .pm-cancel-button-div{
+        .pm-cancel-button{
+            height: 2em;
+            margin-left: 4em;
+            width: 7em;
+        }
+    }
+    .rpm-dashbord-calendar {
+        .ui-calendar {
+            width: 100%;
+            input {
+                width: 100%;
+                font-family: CorpoS;
+                font-size: 15px;
+            }
+            .ui-calendar-button {
+                border-right: 1px solid #d6d6d6;
+                border-top: 1px solid #d6d6d6;
+                border-bottom: 1px solid #d6d6d6;
+                border-left: none !important;
+                background: white;
+                color: black;
+                width: 3.2em;
+                pointer-events: none;
+            }
+        }
+        .ui-inputtext:focus {
+            box-shadow: none;
+        }
+        .ui-inputtext:hover {
+            border-color: #d6d6d6;
+        }
+    }
+
+    .pm-advancedsearch-field-date {
+        font-family: CopoS;
+        z-index: 99999;
+        cursor: pointer;
+        .ui-inputtext {
+          //  -webkit-box-shadow:  0px 4px 15px -3px rgba(0,0,0,0.75);
+            width:93%;
+           // border-radius: 12px;
+        }
+        .ui-calendar {
+            font-family: CopoS;
+            display: block;   
+            .ui-inputtext{
+                font-family: CopoS;
+            }       
+        }
+        .ui-datepicker{
+            font-family: CopoS;
+
+        }
+    }
+}
+
+
+

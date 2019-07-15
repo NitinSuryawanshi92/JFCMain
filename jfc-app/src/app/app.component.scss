@@ -1,0 +1,135 @@
+.pm-log-in-div {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.2;
+    pointer-events: none;
+}
+.form-control{
+    margin-bottom: 1em;
+    height: 2em;
+    width: 100%;
+}
+.wrapper {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+}
+.form-signin {
+    max-width: 480px;
+    padding: 150px 150px 150px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    border: 1px solid rgba(0,0,0,0.1);
+    
+}
+.pm-log-in-button {
+    background: #444444 !important;
+    border: none !important;
+    width: 100%;
+    height: 2.2em;
+    border-radius: 3px;
+}
+.pm-continue-button {
+    background: #444444 !important;
+    border: none !important;
+    width: 100%;
+    height: 2.1em;
+    border-radius: 3px;
+}
+.pm-log-in-button:active { 
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+}
+.pm-continue-button:active { 
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+}
+
+
+
+
+
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #60a3bc !important;
+}
+.container{
+    padding-top: 4em!important;
+}
+.user_card {
+    height: 400px;
+    width: 350px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+
+}
+.brand_logo_container {
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    top: -75px;
+    border-radius: 50%;
+    background: White;
+    padding: 10px;
+    text-align: center;
+}
+.brand_logo {
+    height: 150px;
+    width: 150px;
+  //  border-radius: 50%;
+    border: 2px solid white;
+}
+.form_container {
+    margin-top: 100px;
+}
+.login_btn {
+    width: 100%;
+    background: #e4051f !important;
+    color: white !important;
+}
+.login_btn:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+.login_container {
+    padding: 0 2rem;
+}
+.input-group-text {
+    background: #c0392b !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+}
+.input_user,
+.input_pass:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #e4051f !important;
+}
+
+
+
+
