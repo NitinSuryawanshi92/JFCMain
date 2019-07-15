@@ -1,9 +1,9 @@
 *.class
 *.jar
-rpm-service/build
+jfc-service/build
 .gradle
-rpm-service/.gradle
+jfc-service/.gradle
 *.orig
-rpm-service/bin
-rpm-service/src/main/webapp
-rpm-service/.settings
+jfc-service/bin
+jfc-service/src/main/webapp
+jfc-service/.settings
