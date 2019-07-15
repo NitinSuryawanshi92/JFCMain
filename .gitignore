@@ -1,0 +1,9 @@
+*.class
+*.jar
+jfc-service/build
+.gradle
+jfc-service/.gradle
+*.orig
+jfc-service/bin
+jfc-service/src/main/webapp
+jfc-service/.settings
